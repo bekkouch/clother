@@ -45,12 +45,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { WeatherCardComponent } from './components/weather-card/weather-card.component';
+import { FitSliderComponent } from './components/fit-slider/fit-slider.component';
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
-    WeatherCardComponent
+    WeatherCardComponent,
+    FitSliderComponent
   ],
   imports: [
     CommonModule,
@@ -101,7 +103,8 @@ import { WeatherCardComponent } from './components/weather-card/weather-card.com
   ],
   exports: [
     ToolbarComponent,
-    WeatherCardComponent
+    WeatherCardComponent,
+    FitSliderComponent
   ]
 })
 export class SharedModule { }
